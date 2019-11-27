@@ -1,23 +1,56 @@
 from tkinter import *
+import os
+import pygame
+
+from pygame.mixer import Sound
+
+'''import pygame
+import os
+from pygame.mixer import Sound
+
+pygame.init()
+clip = os.path.abspath("palmas.wav")
+
+def load_mus():
+    pygame.mixer.music.load("palmas.wav")
+    pygame.mixer.music.play()
+    pygame.mixer.set_volume(4)
+    pass
+
+load_mus()
+
+'''
+
 
 def sound_maker_one():
-    print("sound_maker_one")
+    pygame.init()
+    pygame.mixer.music.load("sons/Snare.wav")
+    pygame.mixer.music.play()
 
 def sound_maker_two():
-    print("sound_maker_two")
+    pygame.init()
+    pygame.mixer.music.load("sons/Crashprato.wav")
+    pygame.mixer.music.play()
 
 def sound_maker_three():
-    print("sound_maker_three")
+    pygame.init()
+    pygame.mixer.music.load("sons/hithatclose.wav")
+    pygame.mixer.music.play()
 
 def sound_maker_four():
-    print("sound_maker_four")
+    pygame.init()
+    pygame.mixer.music.load("sons/kick1.wav")
+    pygame.mixer.music.play()
 
 def sound_maker_five():
-    print("sound_maker_five")
+    pygame.init()
+    pygame.mixer.music.load("sons/ride.wav")
+    pygame.mixer.music.play()
 
 def sound_maker_six():
-    print("sound_maker_six")
-
+    pygame.init()
+    pygame.mixer.music.load("sons/tom1.wav")
+    pygame.mixer.music.play()
 
 app = Tk()
 
@@ -45,19 +78,4 @@ app.title('music creator')
 app.geometry('700x400')
 app.mainloop()
 
-'''import pygame
-import os
-from pygame.mixer import Sound
-
-pygame.init()
-clip = os.path.abspath("palmas.wav")
-
-def load_mus():
-    pygame.mixer.music.load("palmas.wav")
-    pygame.mixer.music.play()
-    pygame.mixer.set_volume(4)
-    pass
-
-load_mus()
-
-'''
+pygame.key.get_pressed()
