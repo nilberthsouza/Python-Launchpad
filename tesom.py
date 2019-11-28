@@ -1,56 +1,42 @@
 from tkinter import *
 import os
 import pygame
-
 from pygame.mixer import Sound
 
-'''import pygame
-import os
-from pygame.mixer import Sound
+#functions
 
-pygame.init()
-clip = os.path.abspath("palmas.wav")
-
-def load_mus():
-    pygame.mixer.music.load("palmas.wav")
-    pygame.mixer.music.play()
-    pygame.mixer.set_volume(4)
-    pass
-
-load_mus()
-
-'''
-
+def sound_maker(sound_name):
+    #função generica que é executada dentro de cada função executada pelo botão
+    pygame.init()
+    pygame.mixer.music.load(sound_name)
+    return pygame.mixer.music.play()
 
 def sound_maker_one():
-    pygame.init()
-    pygame.mixer.music.load("sons/Snare.wav")
-    pygame.mixer.music.play()
+    sound = "sons/Snare.wav"
+    sound_maker(sound)
 
 def sound_maker_two():
-    pygame.init()
-    pygame.mixer.music.load("sons/Crashprato.wav")
-    pygame.mixer.music.play()
+    sound = "sons/Crashprato.wav"
+    sound_maker(sound)
 
 def sound_maker_three():
-    pygame.init()
-    pygame.mixer.music.load("sons/hithatclose.wav")
-    pygame.mixer.music.play()
+    sound = "sons/hithatclose.wav"
+    sound_maker(sound)
 
 def sound_maker_four():
-    pygame.init()
-    pygame.mixer.music.load("sons/kick1.wav")
-    pygame.mixer.music.play()
+    sound = "sons/kick1.wav"
+    sound_maker(sound)
 
 def sound_maker_five():
-    pygame.init()
-    pygame.mixer.music.load("sons/ride.wav")
-    pygame.mixer.music.play()
+    sound = "sons/ride.wav"
+    sound_maker(sound)
 
 def sound_maker_six():
-    pygame.init()
-    pygame.mixer.music.load("sons/tom1.wav")
-    pygame.mixer.music.play()
+    sound = "sons/tom1.wav"
+    sound_maker(sound)
+
+
+
 
 app = Tk()
 
