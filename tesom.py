@@ -6,7 +6,6 @@ from pygame.mixer import Sound
 #functions
 
 def sound_maker(sound_name):
-    #função generica que é executada dentro de cada função executada pelo botão
     pygame.init()
     pygame.mixer.music.load(sound_name)
     return pygame.mixer.music.play()
@@ -59,8 +58,28 @@ button_five.grid(row=2, column=2, pady=20,padx=20)
 button_six = Button(app, text='sound 6', width=20, command=sound_maker_six)
 button_six.grid(row=2, column=3, pady=20,padx=20)
 
+#colors
+button_one["fg"] ="black"
+button_one["bg"] ="white"
 
-app.title('music creator')
+button_two["fg"] ="black"
+button_two["bg"] ="white"
+
+button_three["fg"] ="black"
+button_three["bg"] ="white"
+
+button_four["fg"] ="black"
+button_four["bg"] ="white"
+
+button_five["fg"] ="black"
+button_five["bg"] ="white"
+
+button_six["fg"] ="black"
+button_six["bg"] ="white"
+
+
+
+app.title('Python Launchpad')
 app.geometry('700x400')
 app.mainloop()
 
