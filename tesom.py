@@ -34,9 +34,6 @@ def sound_maker_six():
     sound = "sons/tom1.wav"
     sound_maker(sound)
 
-
-
-
 app = Tk()
 
 #buttons
@@ -59,6 +56,9 @@ button_six = Button(app, text='sound 6', width=20, command=sound_maker_six)
 button_six.grid(row=2, column=3, pady=20,padx=20)
 
 #colors
+
+app["bg"]="green"
+
 button_one["fg"] ="black"
 button_one["bg"] ="white"
 
