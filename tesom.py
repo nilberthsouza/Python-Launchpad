@@ -2,17 +2,34 @@ from tkinter import *
 import os
 import pygame
 from pygame.mixer import Sound
+import tkinter as tk
+from tkinter import filedialog
 
 #functions
+
+def sound_define():
+    global file_path
+    file_path = filedialog.askopenfilename()
+    return file_path
+
+def sound_define_one():
+    global SOUND
+    SOUND = sound_define()
+    return SOUND
+
 def sound_maker(sound_name):
     pygame.init()
     pygame.mixer.music.load(sound_name)
     return pygame.mixer.music.play()
 
 def sound_maker_one():
+   sound = SOUND
+   sound_maker(sound)
+'''
+def sound_maker_one():
     sound = "sons/Snare.wav"
     sound_maker(sound)
-
+'''
 def sound_maker_two():
     sound = "sons/Crashprato.wav"
     sound_maker(sound)
@@ -59,9 +76,11 @@ def sound_maker_twelve():
 
 app = Tk()
 
+button_zero = Button(app, text='definir som', width=10, command=sound_define_one)
+button_zero.grid(row=0, column=0)
+
+
 #buttons
-
-
 button_one = Button(app, text='SNARE', width=20, command=sound_maker_one)
 
 button_two = Button(app, text='CRASH', width=20, command=sound_maker_two)
