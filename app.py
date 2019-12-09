@@ -6,7 +6,6 @@ import tkinter as tk
 from tkinter import filedialog
 
 #functions
-
 def sound_define():
     global file_path
     file_path = filedialog.askopenfilename()
@@ -78,7 +77,6 @@ app = Tk()
 
 button_zero = Button(app, text='definir som', width=10, command=sound_define_one)
 button_zero.grid(row=0, column=0)
-
 
 #buttons
 button_one = Button(app, text='SNARE', width=20, command=sound_maker_one)
