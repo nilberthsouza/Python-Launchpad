@@ -133,4 +133,5 @@ class Application(tk.Frame):
         self.sound_maker(sound)
 root = tk.Tk()
 app= Application(master=root)
+root["bg"]="black"
 app.mainloop()
