@@ -19,12 +19,12 @@ class Application(tk.Frame):
         self.SOUND ="" 
     def create_widgets(self):
         #button one
-        self.button_one = tk.Button(self.master, text='SNARE', width=20, command=self.sound_maker_one)
-        self.button_one.grid(row=1, column=1, pady=20,padx=20)
+        self.button_one = tk.Button(self.master,bg="blue" , width=15,height=7, command=self.sound_maker_one)
+        self.button_one.grid(row=1, column=1, pady=10,padx=10)
 
         #button two
-        self.button_two = tk.Button(self.master, text='CRASH', width=20, command=self.sound_maker_two)
-        self.button_two.grid(row=1, column=2, pady=20,padx=20)
+        self.button_two = tk.Button(self.master, text='CRASH', width=7,height=7, command=self.sound_maker_two)
+        self.button_two.grid(row=1, column=2, pady=10,padx=10)
         #button three
 
         self.button_three = tk.Button(self.master, text='HIHATc', width=20, command=self.sound_maker_three)
