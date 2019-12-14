@@ -20,50 +20,50 @@ class Application(tk.Frame):
     def create_widgets(self):
         #button one
         self.button_one = tk.Button(self.master,bg="blue" , width=15,height=7, command=self.sound_maker_one)
-        self.button_one.grid(row=1, column=1, pady=10,padx=10)
+        self.button_one.grid(row=0, column=1)
 
         #button two
-        self.button_two = tk.Button(self.master, text='CRASH', width=7,height=7, command=self.sound_maker_two)
-        self.button_two.grid(row=1, column=2, pady=10,padx=10)
+        self.button_two = tk.Button(self.master,bg="red", width=15,height=7, command=self.sound_maker_two)
+        self.button_two.grid(row=0, column=2)
         #button three
 
-        self.button_three = tk.Button(self.master, text='HIHATc', width=20, command=self.sound_maker_three)
-        self.button_three.grid(row=1, column=3, pady=20,padx=20)
+        self.button_three = tk.Button(self.master,bg="green", width=15,height=7, command=self.sound_maker_three, )
+        self.button_three.grid(row=0, column=3)
 
         #button_four
-        self.button_four = tk.Button(self.master, text='KICK', width=20, command=self.sound_maker_four)
+        self.button_four = tk.Button(self.master,bg="yellow", height=7, width=15, command=self.sound_maker_four)
         self.button_four.grid(row=2, column=1, pady=20,padx=20)
 
         #button_five
-        self.button_five = tk.Button(self.master, text='RIDE', width=20, command=self.sound_maker_five)
+        self.button_five = tk.Button(self.master,bg="white", height=7, width=15, command=self.sound_maker_five)
         self.button_five.grid(row=2, column=2, pady=20,padx=20)
 
         #button_six
-        self.button_six = tk.Button(self.master, text='', width=20, command=self.sound_maker_six)
+        self.button_six = tk.Button(self.master,bg="pink", height=7, width=15, command=self.sound_maker_six)
         self.button_six.grid(row=2, column=3, pady=20,padx=20)
 
         #button_seven
-        self.button_seven= tk.Button(self.master, text='', width=20, command=self.sound_maker_seven)
+        self.button_seven= tk.Button(self.master,bg="black", height=7, width=15, command=self.sound_maker_seven)
         self.button_seven.grid(row=3, column=1, pady=20,padx=20)
 
         #button_eight
-        self.button_eight = tk.Button(self.master, text='', width=20, command=self.sound_maker_eight)
+        self.button_eight = tk.Button(self.master,bg="light green", height=7, width=15, command=self.sound_maker_eight)
         self.button_eight.grid(row=3, column=2, pady=20,padx=20)
 
         #button_nine
-        self.button_nine = tk.Button(self.master, text='', width=20, command=self.sound_maker_nine)
+        self.button_nine = tk.Button(self.master,bg="light blue", height=7, width=15, command=self.sound_maker_nine)
         self.button_nine.grid(row=3, column=3, pady=20,padx=20)
 
         #button_ten
-        self.button_ten = tk.Button(self.master, text='', width=20, command=self.sound_maker_ten)
+        self.button_ten = tk.Button(self.master,bg="brown", height=7, width=15, command=self.sound_maker_ten)
         self.button_ten.grid(row=4, column=1, pady=20,padx=20)
 
         #buton eleven
-        self.button_eleven = tk.Button(self.master, text='', width=20, command=self.sound_maker_eleven)
+        self.button_eleven = tk.Button(self.master,bg="orange", height=7, width=15, command=self.sound_maker_eleven)
         self.button_eleven.grid(row=4, column=2, pady=20,padx=20)
 
         #button twelve
-        self.button_twelve = tk.Button(self.master, text='', width=20, command=self.sound_maker_twelve)
+        self.button_twelve = tk.Button(self.master,bg="purple", height=7, width=15, command=self.sound_maker_twelve)
         self.button_twelve.grid(row=4, column=3, pady=20,padx=20)
 
  
@@ -133,5 +133,6 @@ class Application(tk.Frame):
         self.sound_maker(sound)
 root = tk.Tk()
 app= Application(master=root)
-root["bg"]="black"
+root["bg"]="gray"
+
 app.mainloop()
