@@ -9,16 +9,7 @@ serão 24 tecla
 
 
 ### Carregar preset
-O usuario poderar clicar em Carregar preset e selecionar todos os arquivos .wav de uma pasta numeros de 1 a x , sendo x o numero n de arquivos, e assim o Launchpad carregará todos os aquivos para suas respectivas teclas.
-
-Caso o usuario queria, ele também pode carregar cada arquivo para cada tecla individualmente
-
-ex:
-Configuração -> personalização -> configuração de botão 
-
-```
-Numero do botão:___   carregar arquivo:____
-```
+O usuario clica no botão preset e então clica no botão desejado e uma caixa de dialogo se abrirá que será responsavel para carregar o preset
 
 # Design 
 
