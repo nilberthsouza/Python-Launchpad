@@ -131,8 +131,11 @@ class Application(tk.Frame):
     def sound_maker_twelve(self):
         sound = "sons/tom1.wav"
         self.sound_maker(sound)
+        
 root = tk.Tk()
+
 app= Application(master=root)
+
 root["bg"]="gray"
 
 app.mainloop()
