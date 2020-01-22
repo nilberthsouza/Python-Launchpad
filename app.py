@@ -16,7 +16,8 @@ class Application(tk.Frame):
         #create widgets and grid
         self.create_widgets()
         #selected button item var
-        self.SOUND ="" 
+        self.SOUND =""
+        
     def create_widgets(self):
         #button one
         self.button_one = tk.Button(self.master,bg="blue" , width=15,height=7, command=self.sound_maker_one)
