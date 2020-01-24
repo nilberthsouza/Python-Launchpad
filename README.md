@@ -14,3 +14,5 @@ O usuario clica no botão preset e então clica no botão desejado e uma caixa d
 # Design 
 
 A ideia é fazer um design clean , com poucas configurações para que o usuario possa ir direto ao que realmente importa: Make Music
+
+Porem quero adcionar a opção de mudar o background e de que as teclas fiquem piscando de acordo com padrões pre definidos
