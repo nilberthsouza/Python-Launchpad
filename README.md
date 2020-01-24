@@ -11,7 +11,7 @@ serão 24 tecla
 ### Carregar preset
 O usuario clica no botão preset e então clica no botão desejado e uma caixa de dialogo se abrirá que será responsavel para carregar o preset
 
-# Design 
+### Design 
 
 A ideia é fazer um design clean , com poucas configurações para que o usuario possa ir direto ao que realmente importa: Make Music
 
