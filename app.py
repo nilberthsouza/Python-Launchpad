@@ -1,4 +1,5 @@
 from tkinter import *
+#necessario substituir pygame urgentemente
 import pygame
 from pygame.mixer import Sound
 import tkinter as tk
