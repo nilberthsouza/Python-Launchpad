@@ -1,4 +1,4 @@
-# Python-Launchpad
+# Python-LAUNCHPAD
 
 O projeto Python Lauchpad é um projeto para que dj's, entusiastas e fans de musica no geral possam criar suas proprias musicas eletronicas, funks ou beat's de rap atravez de um software gratuito que simula um piano
 
